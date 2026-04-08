@@ -10,30 +10,37 @@ Rate limits are usually measured across three dimensions:
 - Requests per day (**RPD**)
 - Tokens per minute (input) (**TPM**)
 
-Your usage is evaluated against each limit, and exceeding any of them will
-trigger a rate limit error. For example, if your RPM limit is 20, making 21
-requests within a minute will result in an error, even if you haven't exceeded
-your TPM or other limits.
+Your usage is evaluated against each limit,
+and exceeding any of them will trigger a rate limit error.
+For example,
+if your RPM limit is 20,
+making 21 requests within a minute will result in an error,
+even if you haven't exceeded your TPM or other limits.
 
-Rate limits are applied per project, not per API key. Requests per day (**RPD**)
-quotas reset at midnight Pacific time.
+Rate limits are applied per project, not per API key.
+Requests per day (**RPD**) quotas reset at midnight Pacific time.
 
-Limits vary depending on the specific model being used, and some limits only
-apply to specific models. For example, Images per minute, or IPM, is only
-calculated for models capable of generating images (Nano Banana), but is
-conceptually similar to TPM. Other models might have a token per day limit (TPD).
+Limits vary depending on the specific model being used,
+and some limits only apply to specific models.
+For example,
+Images per minute, or IPM,
+is only calculated for models capable
+of generating images (Nano Banana),
+but is conceptually similar to TPM.
+Other models might have a token per day limit (TPD).
 
 Rate limits are more restricted for experimental and preview models.
 
 ## Usage tiers
 
-Rate limits are tied to the project's usage tier. As your API usage and spending
-increase, you'll be automatically upgraded to a higher tier with increased rate
-limits.
+Rate limits are tied to the project's usage tier.
+As your API usage and spending increase,
+you'll be automatically upgraded to a higher tier with increased rate limits.
 
-The qualifications for Tiers 2 and 3 are based on the total cumulative spending
-on Google Cloud services (including, but not limited to, the Gemini API) for the
-billing account linked to your project.
+The qualifications for Tiers 2 and 3
+are based on the total cumulative spending on Google Cloud services
+(including, but not limited to, the Gemini API)
+for the billing account linked to your project.
 
 | Usage tier | Qualification                                                                                                | [Billing tier cap](https://ai.google.dev/gemini-api/docs/rate-limits#spend-caps) |
 | ---------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
@@ -42,17 +49,19 @@ billing account linked to your project.
 | **Tier 2** | Paid $100 + 3 days from first successful payment                                                             | $2,000                                                                           |
 | **Tier 3** | Paid $1,000 + 30 days from first successful payment                                                          | $20,000 - $100,000+                                                              |
 
-While meeting the stated qualification criteria is generally
-sufficient for approval, in rare cases an upgrade request may be denied based on
-other factors identified during the review process.
+While meeting the stated qualification criteria
+is generally sufficient for approval,
+in rare cases an upgrade request may be
+denied based on other factors identified during the review process.
 
-This system helps maintain the security and integrity of the Gemini API platform
-for all users.
+This system helps maintain the security
+and integrity of the Gemini API platform for all users.
 
 ## Gemini API rate limits
 
-Rate limits depend on a variety of factors (such as your usage tier) and can be
-viewed in Google AI Studio. As your tier and account status change over time,
+Rate limits depend on a variety of factors (such as your usage tier)
+and can be viewed in Google AI Studio.
+As your tier and account status change over time,
 your rate limits will automatically update.
 
 [View your active rate limits in AI Studio](https://aistudio.google.com/rate-limit?timeRange=last-28-days)
@@ -61,19 +70,27 @@ Specified rate limits are not guaranteed and actual capacity may vary.
 
 ## Priority inference rate limits
 
-[Priority](https://ai.google.dev/gemini-api/docs/priority-inference) consumption holds its own rate
-limits even though consumption is counted towards overall interactive traffic
-rate limits. **Default rate limits are: 0.3x the [standard rate limit](https://aistudio.google.com/rate-limit) for each model and tier**
+[Priority](https://ai.google.dev/gemini-api/docs/priority-inference)
+consumption holds its own rate
+limits even though consumption is counted towards
+overall interactive traffic rate limits.
+**Default rate limits are:
+0.3x the [standard rate limit](https://aistudio.google.com/rate-limit) for each model and tier**
 
 ## Batch API rate limits
 
-[Batch API](https://ai.google.dev/gemini-api/docs/batch-api) requests are subject to their own rate
-limits, separate from the non-batch API calls.
+[Batch API](https://ai.google.dev/gemini-api/docs/batch-api)
+requests are subject to their own rate limits,
+separate from the non-batch API calls.
 
 - **Concurrent batch requests:** 100
 - **Input file size limit:** 2GB
 - **File storage limit:** 20GB
-- **Enqueued tokens per model:** The **Batch enqueued tokens** table lists the maximum number of tokens that can be enqueued for batch processing across all your active batch jobs for a given model.
+- **Enqueued tokens per model:**
+  The **Batch enqueued tokens**
+  table lists the maximum number of tokens
+  that can be enqueued for batch processing across
+  all your active batch jobs for a given model.
 
 ### Tier 1
 
@@ -152,10 +169,13 @@ limits, separate from the non-batch API calls.
 To transition from the Free tier to a paid tier, you must first
 [set up billing in AI Studio](https://ai.google.dev/gemini-api/docs/billing).
 
-Once your project meets the [specified criteria](https://ai.google.dev/gemini-api/docs/rate-limits#usage-tiers), it will be
-automatically upgraded to the next tier. Tier upgrades from the Free to Tier 1
-will typically take effect instantly, and subsequent tier upgrades will take
-effect within 10 minutes. Navigate to the [Projects page](https://aistudio.google.com/projects) in AI Studio to check your tiers.
+Once your project meets the
+[specified criteria](https://ai.google.dev/gemini-api/docs/rate-limits#usage-tiers),
+it will be automatically upgraded to the next tier.
+Tier upgrades from the Free to Tier 1 will typically take effect instantly,
+and subsequent tier upgrades will take effect within 10 minutes.
+Navigate to the [Projects page](https://aistudio.google.com/projects)
+in AI Studio to check your tiers.
 
 ## Request a rate limit increase
 
@@ -165,5 +185,5 @@ For details on those rate limits, see the
 
 [Request paid tier rate limit increase](https://forms.gle/ETzX94k8jf7iSotH9)
 
-We offer no guarantees about increasing your rate limit, but we'll do our best
-to review your request.
+We offer no guarantees about increasing your rate limit,
+but we'll do our best to review your request.
