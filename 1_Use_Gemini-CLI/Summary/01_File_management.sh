@@ -1,6 +1,12 @@
 # File management with Gemini CLI
 
 # =============================================================
+## Controlling what Gemini sees
+# By default, Gemini CLI respects your `.gitignore` file.
+.geminiignore
+
+# you can create a .geminiignore file in your project root.
+# =============================================================
 ## Providing context by reading files
 # Direct file inclusion (`@`)
 @src/components/UserProfile.tsx Explain how this component handles user data.
@@ -24,9 +30,3 @@ Find the file that defines the UserProfile component.
 ## Verify the result
 Run the tests for the UserProfile component.
 # (for example, `npm test` or `jest`).
-
-# =============================================================
-## Advanced: Controlling what Gemini sees
-# By default, Gemini CLI respects your `.gitignore` file.
-.geminiignore
-# you can create a .geminiignore file in your project root.

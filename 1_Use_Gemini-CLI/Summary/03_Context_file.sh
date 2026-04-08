@@ -14,8 +14,10 @@
 # Saving a memory
 #
 # Examples:
-# Prompt:`Remember that I prefer using 'const' over 'let' wherever possible.`
-# Prompt:`Save the fact that the staging server IP is 10.0.0.5.`
+# Prompt:
+Remember that I prefer using 'const' over 'let' wherever possible.
+# Prompt:
+Save the fact that the staging server IP is 10.0.0.5.
 
 # =============================================================
 # View active context

@@ -9,9 +9,11 @@
 # **Prompt:**
 Run the unit tests. If any fail, analyze the error and try to fix the code.
 # **Workflow:**
-# 1. Gemini calls `run_shell_command('npm test')`.
+# 1. Gemini calls 
+run_shell_command('npm test')
 # 2. You see a confirmation prompt: `Allow command 'npm test'? [y/N]`.
-# 3. You press `y`.
+# 3. You press
+y
 # 4. The tests run. If they fail, Gemini reads the error output.
 # 5. Gemini uses `read_file` to inspect the failing test.
 # 6. Gemini uses `replace` to fix the bug.
