@@ -11,3 +11,6 @@ before planing we must have a goal
         in internet or youtube or ask AI
 
 - option 2 we have a project
+
+i don't know if you can make a full guide like thes
+let's say just make a full guide to how to planning for new project for example
