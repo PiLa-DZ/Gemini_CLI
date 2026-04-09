@@ -1,0 +1,3 @@
+/ide
+/directory
+/init
