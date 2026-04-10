@@ -3,6 +3,14 @@
 To help you hit the ground running,
 here are a few prompt ideas you can use right away:
 
+- For creating a coding plan:
+
+```toml
+I want to build [brief project description].
+Can you help me break this down into manageable tasks
+and suggest an order of implementation?
+```
+
 - For setting up a new project:
 
 ```toml
@@ -18,12 +26,4 @@ and essential dependencies I should consider?
 ```toml
 What are the key strengths and limitations
 I should be aware of when using you for software development tasks?
-```
-
-- For creating a coding plan:
-
-```toml
-I want to build [brief project description].
-Can you help me break this down into manageable tasks
-and suggest an order of implementation?
 ```
